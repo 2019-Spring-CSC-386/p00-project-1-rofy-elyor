@@ -1,6 +1,6 @@
 # Sound Detection Security
 
-**Author(s)**: *Raymond Okyere-Forson & *
+**Author(s)**: *Raymond Okyere-Forson & Elyor*
 
 **Google Document**: *https://docs.google.com/document/d/1EXmQ7teX7KDZrPH5cdPVMI5438ql7kau7XEo_zoTTfA/edit?usp=sharing*
 
