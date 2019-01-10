@@ -1,7 +1,6 @@
-# P00: Project 1
-*Give your project a name and replace the above text with that name.*
+# Sound Detection Security
 
-**Author(s)**: *Scott Heggen (replace me!)*
+**Author(s)**: *Raymond Okyere-Forson & *
 
 **Google Document**: *Paste the link to your shared Google Document here*
 
