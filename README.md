@@ -2,7 +2,7 @@
 
 **Author(s)**: *Raymond Okyere-Forson & *
 
-**Google Document**: *Paste the link to your shared Google Document here*
+**Google Document**: *https://docs.google.com/document/d/1EXmQ7teX7KDZrPH5cdPVMI5438ql7kau7XEo_zoTTfA/edit?usp=sharing*
 
 ---
 ## Purpose
