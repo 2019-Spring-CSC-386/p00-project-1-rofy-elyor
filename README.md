@@ -8,15 +8,23 @@
 ## Purpose
 *Did you forget to lock? LockPro v1 has your back!*
 
-Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time (more than 5 minutes). The problem is that somebody else can access the dorm room and potentially steal Elyor's and his roommate's belongings. LockPro v1 will auto-lock the door after it has been left unlocked for 5 minutes. Also, the sound detection security will simulate a door-locking system that can be voice (or sound) activated. At the prototype stage, the lock will be simulated with a red LED when the door is locked and with a green LED when the door is unlocked. The voice/sound lock/unlock functionality can help in case Elyor or his roommate lock themselves out of the room by leaving their IDs inside.
+The sound detection security will simulate a door-locking system that can be voice activated. It will auto-lock door after 5 minutes if no lock action is implemented after door has been uncloked. The lock operatio will be represented in the initial process with a red LED and the unlock operation will be represented with a green LED. This will target college students and even senior citizens who might have issues remembering to lock their doors when they leave or in-between movements in and out of the room or door.
 
 ## Initial Design Plan
-*You'll complete this section as part of Milestone 1, and update regularly.*
+*To build LockPro v1, we will be using different hardware components along with the master code that will run the entire operation.*
 
-Outline the product you're creating:
-- List the hardware components you'll be using, and how they interact. 
-  This is an appropriate place for a diagram. An EXCELLENT resource 
-  for creating diagrams is the [Fritzing website](http://fritzing.org/home/ "Fritzing website")
+- Arduino UNO
+- Breadboard
+- HC-06 or HC-05 Bluetooth Module
+- LEDs (Red and Green)
+- Resistor: 220 ohm or 330 ohm
+- Smartphone with Arduino Bluetooth Voice Controller (Download from Google Play Store)
+- Connecting wires
+- Sensor
+- Jumper Cables
+- Piezoelectric Sensor
+*Source:* https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/ & https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
+
 - List all of the known parts in the code you'll be creating.
   - Your program must follow good coding standards. 
   Primarily, I mean your code should include meaningful functions 
