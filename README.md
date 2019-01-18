@@ -1,4 +1,4 @@
-# Sound Detection Security
+# Sound Detection Security (Lock)
 
 **Author(s)**: *Raymond Okyere-Forson & Elyor Tukhtasinov*
 
