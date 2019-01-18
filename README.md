@@ -8,7 +8,7 @@
 ## Purpose
 *Did you forget to lock? LockPro v1 has your back!*
 
-The sound detection security will simulate a door-locking system that can be voice activated. It will auto-lock door after 5 minutes if no lock action is implemented after door has been uncloked. The lock operatio will be represented in the initial process with a red LED and the unlock operation will be represented with a green LED. This will target college students and even senior citizens who might have issues remembering to lock their doors when they leave or in-between movements in and out of the room or door.
+Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time (more than 5 minutes). The problem is that somebody else can access the dorm room and potentially loot it. The sound detection security will simulate a door-locking system that can be voice (sound) activated. It will auto-lock the door after it has been left unlocked for 5 minutes. The lock operation will be represented in the initial process with a red LED and the unlock operation will be represented with a green LED.
 
 ## Initial Design Plan
 *You'll complete this section as part of Milestone 1, and update regularly.*
