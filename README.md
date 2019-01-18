@@ -47,7 +47,7 @@ as projects evolve over time.
 - Example.png: is stored in the images folder and serves as a placeholder for an example in README.md on how to insert an image
 - Knock_example.ino: an example of code that uses piezo sensor to sense knocking (vibration)
 - README.md: master file where we document everything about our project
-- example-README.md: example of the master file with instructions that we have to follow in fillion out our README.md
+- example-README.md: example of the master file with instructions that we have to follow in filling out our README.md
 - images (folder): is a folder to store images to be inserted in README.md
 
 ## Summary
