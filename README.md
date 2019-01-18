@@ -8,7 +8,7 @@
 ## Purpose
 *Did you forget to lock? LockPro v1 has your back!*
 
-Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time (more than 5 minutes). The problem is that somebody else can access the dorm room and potentially loot it. The sound detection security will simulate a door-locking system that can be voice (sound) activated. It will auto-lock the door after it has been left unlocked for 5 minutes. The lock operation will be represented in the initial process with a red LED and the unlock operation will be represented with a green LED.
+Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time (more than 5 minutes). The problem is that somebody else can access the dorm room and potentially steal Elyor's and his roommate's belongings. LockPro v1 will auto-lock the door after it has been left unlocked for 5 minutes. Also, the sound detection security will simulate a door-locking system that can be voice (or sound) activated. At the prototype stage, the lock will be simulated with a red LED when the door is locked and with a green LED when the door is unlocked. The voice/sound lock/unlock functionality can help in case Elyor or his roommate lock themselves out of the room by leaving their IDs inside.
 
 ## Initial Design Plan
 *You'll complete this section as part of Milestone 1, and update regularly.*
