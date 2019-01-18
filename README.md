@@ -49,6 +49,7 @@ as projects evolve over time.
 - README.md: master file where we document everything about our project
 - example-README.md: example of the master file with instructions that we have to follow in filling out our README.md
 - images (folder): is a folder to store images to be inserted in README.md
+- LockPro_Start_Code.ino: our master file for the code that currently contains the pseudocode
 
 ## Summary
 *You'll complete this part at the end of the project.*
