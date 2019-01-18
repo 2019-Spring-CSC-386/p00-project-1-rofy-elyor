@@ -6,9 +6,9 @@
 
 ---
 ## Purpose
-*You'll complete this section as part of Milestone 1.*
+*Did you forget to lock? LockPro v1 has your back!*
 
-In no more than one paragraph, describe the problem your product will solve, and how.
+The sound detection security will simulate a door-locking system that can be voice activated. It will auto-lock door after 5 minutes if no lock action is implemented after door has been uncloked. The lock operatio will be represented in the initial process with a red LED and the unlock operation will be represented with a green LED. This will target college students and even senior citizens who might have issues remembering to lock their doors when they leave or in-between movements in and out of the room or door.
 
 ## Initial Design Plan
 *You'll complete this section as part of Milestone 1, and update regularly.*
