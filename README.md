@@ -25,13 +25,16 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 - Jumper Cables
 - Piezoelectric Sensor (Learned about it in the Arduino: examples>sensors>knock, googled and found this: https://youtu.be/1SNC3ib10_4)
 
-*Source:* https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/ & https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
+*Sources:* https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/ & https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
 
-- List all of the known parts in the code you'll be creating.
-  - Your program must follow good coding standards. 
-  Primarily, I mean your code should include meaningful functions 
-  and appropriate variables, and be formatted and commented well. 
-  Sloppy code with no structure will be penalized 
+- Including appropriate library or libraries.
+- Initializing constant and global variables.
+- Initializing communication rates.
+- Assigning pins to the appropriate components.
+- Checking to see if communication rates are available.
+- Turning on or off LED based on voice or vibration sensor.
+
+*Please see attached file: LockPro_Start_Code.ino to view full pseudocode.*
 
 
 **Sample image**:
