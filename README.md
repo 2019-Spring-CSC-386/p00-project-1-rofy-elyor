@@ -1,5 +1,11 @@
 # Auto-Detection Security (Lock)
-
+```diff
+- Nice idea, very clear real-world application. 
+- Good job thoroughly describing ALL of the hardware. 
+- I need a diagram or an explanation why you need each hardware component. Some are obvious (maglock); others, not sure what it's being used for (switch, button, etc). 
+- Remove all help text (in italics) and sample images. This document should be your writing ONLY.
+- Piezo sensors have been ordered, should be in next week. Work on the other pieces in the meantime. 
+```
 **Author(s)**: *Raymond Okyere-Forson & Elyor Tukhtasinov*
 
 **Google Document**: *https://docs.google.com/document/d/1EXmQ7teX7KDZrPH5cdPVMI5438ql7kau7XEo_zoTTfA/edit?usp=sharing*
