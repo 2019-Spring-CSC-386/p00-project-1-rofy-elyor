@@ -1,4 +1,4 @@
-# Sound Detection Security (Lock)
+# Auto-Detection Security (Lock)
 
 **Author(s)**: *Raymond Okyere-Forson & Elyor Tukhtasinov*
 
@@ -15,24 +15,20 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 
 - Arduino UNO
 - Breadboard
-- HC-06 or HC-05 Bluetooth Module
-- LEDs (Red and Green)
-- Resistor: 220 ohm or 330 ohm
-- Smartphone with Arduino Bluetooth Voice Controller (Download from Google Play Store)
-- Connecting wires
-- Sensor (Elyor: to determine whether Red or Green LED (lock imitation) is on; an analog pin should serve the purpose) 
-    Citation: https://startingelectronics.org/articles/arduino/measuring-voltage-with-arduino/
+- Relay
+- Magnetic Lock (MagLock)
+- Switch
+- Button
+- Door Sensor
+- Power Supply (12V)
+- Power Probes
+- Connecting wires (Jumper Wires)
 - Jumper Cables
-- Piezoelectric Sensor (Learned about it in the Arduino: examples>sensors>knock, googled and found this: https://youtu.be/1SNC3ib10_4)
+________________________________________________________________________________________________________________________________________
 
-*Sources:* https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/ & https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
-
-- Including appropriate library or libraries.
-- Initializing constant and global variables.
-- Initializing communication rates.
+- Initializing constant and global variables, if any.
 - Assigning pins to the appropriate components.
-- Checking to see if communication rates are available.
-- Turning on or off LED based on voice or vibration sensor.
+- Turning on or off MagLock based on door sensor.
 
 *Please see attached file: LockPro_Start_Code.ino to view full pseudocode.*
 
