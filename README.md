@@ -33,9 +33,13 @@ ________________________________________________________________________________
 *Please see attached file: LockPro_Start_Code.ino to view full pseudocode.*
 
 
-**Sample image**:
+**Breadboard**:
 
-![Trying to add a breadboard view of project](images/bb.png)
+![This is the breadboard view of project](images/bb.png)
+
+**Schematic**:
+
+![This is the schematic view of project](images/schem.png)
 
 **NOTE**: Your initial design plan may not fully reflect your final product,
 as projects evolve over time.
