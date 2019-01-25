@@ -41,11 +41,8 @@ ________________________________________________________________________________
 
 ![This is the schematic view of project](images/schem.png)
 
-**NOTE**: Your initial design plan may not fully reflect your final product,
-as projects evolve over time.
-
 ## Files
-*You'll complete this section as part of Milestone 1.*
+*The list of all files currently being used in this project.*
 
 - Example.png: is stored in the images folder and serves as a placeholder for an example in README.md on how to insert an image
 - Knock_example.ino: an example of code that uses piezo sensor to sense knocking (vibration)
