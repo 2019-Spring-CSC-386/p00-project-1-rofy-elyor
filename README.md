@@ -35,7 +35,7 @@ ________________________________________________________________________________
 
 **Sample image**:
 
-![A sample image to show how to add one to a repo](images/LockPro Diagram_bb.png "Breadboard View")
+![Trying to add a breadboard view of project](images/LockPro Diagram_bb.png)
 
 **NOTE**: Your initial design plan may not fully reflect your final product,
 as projects evolve over time.
