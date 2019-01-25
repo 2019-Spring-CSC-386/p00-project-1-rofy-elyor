@@ -35,7 +35,7 @@ ________________________________________________________________________________
 
 **Sample image**:
 
-![Trying to add a breadboard view of project](images/LockPro Diagram_bb.png)
+![Trying to add a breadboard view of project](images/bb.png)
 
 **NOTE**: Your initial design plan may not fully reflect your final product,
 as projects evolve over time.
