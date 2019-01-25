@@ -18,8 +18,8 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 - Relay
 - Magnetic Lock (MagLock)
 - Switch
-- Button
-- Door Sensor
+- Button (Would be potentially experimented on with a different function)
+- Door Sensor (Might be used in place of switch)
 - Power Supply (12V)
 - Power Probes
 - Connecting wires (Jumper Wires)
