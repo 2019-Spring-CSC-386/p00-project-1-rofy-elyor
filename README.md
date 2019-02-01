@@ -18,8 +18,8 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 - Relay
 - Magnetic Lock (MagLock)
 - Switch
-- Button
-- Door Sensor
+- Button (Would be potentially experimented on with a different function)
+- Door Sensor (Might be used in place of switch)
 - Power Supply (12V)
 - Power Probes
 - Connecting wires (Jumper Wires)
@@ -33,22 +33,26 @@ ________________________________________________________________________________
 *Please see attached file: LockPro_Start_Code.ino to view full pseudocode.*
 
 
-**Sample image**:
+**Breadboard**:
 
-![A sample image to show how to add one to a repo](images/example.png "A sample image. This is the text that appears.")
+![This is the breadboard view of project](images/bb.png)
 
-**NOTE**: Your initial design plan may not fully reflect your final product,
-as projects evolve over time.
+**Schematic**:
+
+![This is the schematic view of project](images/schem.png)
 
 ## Files
-*You'll complete this section as part of Milestone 1.*
+*The list of all files currently being used in this project.*
 
-- Example.png: is stored in the images folder and serves as a placeholder for an example in README.md on how to insert an image
 - Knock_example.ino: an example of code that uses piezo sensor to sense knocking (vibration)
 - README.md: master file where we document everything about our project
 - example-README.md: example of the master file with instructions that we have to follow in filling out our README.md
 - images (folder): is a folder to store images to be inserted in README.md
 - LockPro_Start_Code.ino: our master file for the code that currently contains the pseudocode
+- MagLock Code_1.ino: Currently the best version of working code we have so far based on progress
+- maglock_pro.ino: Trying to setup an auto-lock function of the system
+- maglock_pro_v1.ino: Displaying progress of trying to make the code work
+- maglock_pro_updated: Makes button unlock maglock, else it's always locked
 
 ## Summary
 *You'll complete this part at the end of the project.*
