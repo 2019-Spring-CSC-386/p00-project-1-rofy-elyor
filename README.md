@@ -50,6 +50,8 @@ ________________________________________________________________________________
 - images (folder): is a folder to store images to be inserted in README.md
 - LockPro_Start_Code.ino: our master file for the code that currently contains the pseudocode
 - MagLock Code_1.ino: Currently the best version of working code we have so far based on progress
+- maglock_pro.ino: Trying to setup an auto-lock function of the system
+- maglock_pro_v1.ino: Displaying progress of trying to make the code work
 
 ## Summary
 *You'll complete this part at the end of the project.*
