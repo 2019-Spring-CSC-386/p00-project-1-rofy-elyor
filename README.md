@@ -52,6 +52,7 @@ ________________________________________________________________________________
 - MagLock Code_1.ino: Currently the best version of working code we have so far based on progress
 - maglock_pro.ino: Trying to setup an auto-lock function of the system
 - maglock_pro_v1.ino: Displaying progress of trying to make the code work
+- maglock_pro_updated: Makes button unlock maglock, else it's always locked
 
 ## Summary
 *You'll complete this part at the end of the project.*
