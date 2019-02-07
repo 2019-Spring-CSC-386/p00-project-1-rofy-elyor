@@ -18,7 +18,7 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 - Relay
 - Magnetic Lock (MagLock)
 - Button
-- Buzzer
+- Buzzer (5V)
 - Power Supply (12V)
 - Power Probes
 - Connecting wires (Jumper Wires)
@@ -64,28 +64,35 @@ Along the way, we had troubles with proper wiring as well as scope and experienc
 
 ## Instructions
 
-
+- First, the normal state of the lock is being locked or on.
+- To unlock the lock, press the button. The lock unlocks as you hear the beeping sound.
+- After the lock is unlocked, you have 30 seconds until it locks back again. You will hear the beeping sound when the lock autolocks.
 
 ## Errors and Constraints
 
-
+- There is no security mechanism implemented to unlock the door with a key or a password.
 
 ## Reflection
-*You'll complete this part at the end of the project.*
 
-Write 2 - 4 paragraphs on your reactions to the final project. 
-Your reflection should be thoughtful and reflective. 
-It is NOT a report about WHAT you did. 
-Instead, it's a look back at what you learned by doing this project.
-It should be critical of shortcomings (yours, as well as the instructors/assignments) 
-as well as celebratory of what was achieved.
+Wiring issues, problems solved as they come
+Learned about relays, programming for microcomtroller
+inputs/outputs, application of stuff we learned in electricity and electronics
+learned how to use github outside of IDE
+
+Scope limitations
+Identifying what is relevant and irrelevant
+Importance of being on the same page
+
+Instructor should have found it more effective to have us learn by doing rather than giving us a crash course on major devices we can use and then assigning projects
 
 ## References
 
 - Assistance was received from Cody Mitchell, Teaching Assistant, and Dr. Scott Heggen, course instructor
-- Sensor (Elyor: to determine whether Red or Green LED (lock imitation) is on; an analog pin should serve the purpose) Citation: https://startingelectronics.org/articles/arduino/measuring-voltage-with-arduino/
-- Piezoelectric Sensor (Learned about it in the Arduino: examples>sensors>knock, googled and found this: https://youtu.be/1SNC3ib10_4)
-- General research & useful sources: https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/ & https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
+- Explored sensor (to determine whether Red or Green LED (lock imitation)): https://startingelectronics.org/articles/arduino/measuring-voltage-with-arduino/
+- Explored piezoelectric Sensor (Learned about it in the Arduino: examples>sensors>knock): https://youtu.be/1SNC3ib10_4
+- Explored voice-control features enabled by Arduino: https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/
+- Explored voice-control features enabled by Arduino: https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
+- Explored how relay works with arduino: https://randomnerdtutorials.com/guide-for-relay-module-with-arduino/
 
 
 ## Final Self-Evaluations
