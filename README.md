@@ -18,12 +18,11 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 - Relay
 - Magnetic Lock (MagLock)
 - Button
-- Door Sensor
+- Buzzer
 - Power Supply (12V)
 - Power Probes
 - Connecting wires (Jumper Wires)
 - Jumper Cables
-- Resistor 10 kΩ
 - USB to micro USB cable
 ________________________________________________________________________________________________________________________________________
 
@@ -57,11 +56,11 @@ ________________________________________________________________________________
 
 ## Summary
 
-This project took us around 25 hours, and we were able to create a working lock system with automatic lock and emergency unlock features. As we worked on this project, we had to narrow down its scope, namely forgo the idea of being able to unlock the door using voice, vibration or keypad password. This happened due to challenges presented by the hardware that we needed for an operatable autolock function.
+This project took us around 25 hours, and we were able to create a working lock system with automatic lock and emergency unlock features. As we worked on this project, we had to narrow down its scope, namely forgo the idea of being able to unlock the door using voice, vibration or keypad password as well as the idea of having a door sensor check whether the door is shut. This happened due to challenges presented by the hardware that we needed for an operatable autolock function.
 
-At the prototype stage, after experimenting with a mock lock mimicked by an LED (off-open and on-locked), we received a magnetic lock and realized that the lock needs a 12V power supply, while the microcontroller is limitted to 5V. Therefore, we had to implement a relay to be able to control the maglock with the Arduino microcontroller. We replaced voice/sound/password lock/unlock feature, which we planned as an emergency feature to override the mechanism and unlock the door, with a simple button. We also experimented with a switch/door-sensor to design the feature that would autolock the door if the door sensor (or mimicked door sensor by a switch) shows that the door is unlocked. At first we did not have an emergency unlock button, and our door-sensor/switch was inserted in between the microntroller and the relay, which controlled the current flow mechanically. We progressed with that and disconnected the emergency button and the door sensor from the relay and wired them exclusively to the to the microcontroller. We implemented the code to allow for control of the relay and respectively the lock via microcontroller based on the input from either emergency button or the door sensor.
+At the prototype stage, after experimenting with a mock lock mimicked by an LED (off-open and on-locked), we received a magnetic lock and realized that the lock needs a 12V power supply, while the microcontroller is limitted to 5V. Therefore, we had to implement a relay to be able to control the maglock with the Arduino microcontroller. Due to scope limitatiomns, we replaced voice/sound/password lock/unlock feature, which we planned as an emergency feature to override the mechanism and unlock the door, with a simple button. We also experimented with a switch/door-sensor to design the feature that would autolock the door if the door sensor (or mimicked door sensor by a switch) shows that the door is shut but unlocked. However, we struggled with figuring out how to implement the door sensor, and agreed that the door sensor is out of the scope of the core problem that we are trying to solve, i.e. autolocking the lock after it was left open for 30 seconds. Therefore, we decided to let the door sensor go. At first we did not have an emergency unlock button, and our door-sensor/switch was inserted in between the microntroller and the relay, which controlled the current flow mechanically. We progressed with that and disconnected the emergency button from the relay and wired it exclusively to the to the microcontroller. We implemented the code to allow for control of the relay and respectively the lock via microcontroller based on the input from either emergency button or the program we wrote and loaded into the microcontroller. Last, we implemented a buzzer to enhance our autolock feature by making the autolock device notify the user by making sound when the lock is either locked or unlocked.
 
-Along the way, we had troubles with proper wiring as we needed to implement multiple connections to the ground pins. Nevertheless, we were able to overcome our hardware challenges, and our code started working as intended.
+Along the way, we had troubles with proper wiring as well as scope and experience limitations. Nevertheless, we were able to overcome these challenges and solve the core problem.
 
 ## Instructions
 
