@@ -8,7 +8,7 @@
 ## Purpose
 *Did you forget to lock? LockPro v1 has your back!*
 
-Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time (more than 5 minutes). The problem is that somebody else can access the dorm room and potentially steal Elyor's and his roommate's belongings. LockPro v1 will auto-lock the door after it has been left unlocked for 30 seconds. The lock also has an override button to unlock the door.
+Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time, i.e. more than 30 seconds. The problem is that somebody else can access the dorm room and potentially steal Elyor's and/or his roommate's belongings. LockPro v1 will auto-lock the door after it has been left unlocked for 30 seconds.
 
 ## Initial Design Plan
 *To build LockPro v1, we will be using different hardware components along with the master code that will run the entire operation.*
@@ -71,6 +71,7 @@ Along the way, we had troubles with proper wiring as well as scope and experienc
 ## Errors and Constraints
 
 - There is no security mechanism implemented to unlock the door with a key or a password.
+- If the door is still open and more than 30 seconds passes, the lock will lock itself anyway. To lock the door properly, the user will have to unlock the lock, close the door and wait for 30 seconds until the lock autolocks.
 
 ## Reflection
 
@@ -89,7 +90,7 @@ Instructor should have found it more effective to have us learn by doing rather 
 
 - Assistance was received from Cody Mitchell, Teaching Assistant, and Dr. Scott Heggen, course instructor
 - Explored sensor (to determine whether Red or Green LED (lock imitation)): https://startingelectronics.org/articles/arduino/measuring-voltage-with-arduino/
-- Explored piezoelectric Sensor (Learned about it in the Arduino: examples>sensors>knock): https://youtu.be/1SNC3ib10_4
+- Explored piezoelectric sensor (learned about it in the Arduino: examples>sensors>knock): https://youtu.be/1SNC3ib10_4
 - Explored voice-control features enabled by Arduino: https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/
 - Explored voice-control features enabled by Arduino: https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
 - Explored how relay works with arduino: https://randomnerdtutorials.com/guide-for-relay-module-with-arduino/
