@@ -27,9 +27,9 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 - USB to micro USB cable
 ________________________________________________________________________________________________________________________________________
 
-- Initializing constant and global variables, if any.
-- Assigning pins to the appropriate components.
-- Turning on or off MagLock based on door sensor.
+- Initializing constant and global variables
+- Assigning pins to the appropriate components
+- Turning on or off MagLock based on door sensor
 
 *Please see attached file: LockPro_Start_Code.ino to view full pseudocode.*
 
@@ -56,26 +56,20 @@ ________________________________________________________________________________
 - maglock_pro_updated: Makes button unlock maglock, else it's always locked
 
 ## Summary
-*You'll complete this part at the end of the project.*
 
-Provide a brief summary description of the design and implementation,
-including how much your initial design plan evolved, the final result
-you achieved and the amount of time you spent as a programmer in
-accomplishing these results, including any challenges overcome and
-innovations that were not specifically required by the assignment.
-This section should be no more than three paragraphs.
+This project took us around 25 hours, and we were able to create a working lock system with automatic lock and emergency unlock features. As we worked on this project, we had to narrow down its scope, namely forgo the idea of being able to unlock the door using voice, vibration or keypad password. This happened due to challenges presented by the hardware that we needed for an operatable autolock function.
+
+At the prototype stage, after experimenting with a mock lock mimicked by an LED (off-open and on-locked), we received a magnetic lock and realized that the lock needs a 12V power supply, while the microcontroller is limitted to 5V. Therefore, we had to implement a relay to be able to control the maglock with the Arduino microcontroller. We replaced voice/sound/password lock/unlock feature, which we planned as an emergency feature to override the mechanism and unlock the door, with a simple button. We also experimented with a switch/door-sensor to design the feature that would autolock the door if the door sensor (or mimicked door sensor by a switch) shows that the door is unlocked. At first we did not have an emergency unlock button, and our door-sensor/switch was inserted in between the microntroller and the relay, which controlled the current flow mechanically. We progressed with that and disconnected the emergency button and the door sensor from the relay and wired them exclusively to the to the microcontroller. We implemented the code to allow for control of the relay and respectively the lock via microcontroller based on the input from either emergency button or the door sensor.
+
+Along the way, we had troubles with proper wiring as we needed to implement multiple connections to the ground pins. Nevertheless, we were able to overcome our hardware challenges, and our code started working as intended.
 
 ## Instructions
-Explain how to use your product. 
-This section should THOROUGHLY describe its usage (i.e., more than just "Push start").
+
+
 
 ## Errors and Constraints
-*You'll complete this part at the end of the project.*
 
-Every program has bugs. Use this section to create a bullet list of
-all known errors and deficiencies that remain in your product. 
-Also, list any constraints that must exist for your product to work 
-(e.g., Only works in low light situations).
+
 
 ## Reflection
 *You'll complete this part at the end of the project.*
@@ -94,14 +88,6 @@ as well as celebratory of what was achieved.
 - Piezoelectric Sensor (Learned about it in the Arduino: examples>sensors>knock, googled and found this: https://youtu.be/1SNC3ib10_4)
 - General research & useful sources: https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/ & https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
 
-*Start this section at the beginning of the project, and update it throughout.*
-
-Throughout this project, you'll be used outside resources.
-Reference ALL ideas or code which are not your own, and describe and
-how you integrated the ideas or code into your program. This includes
-online sources, people who have helped you, and any other resources that
-are not solely your own contribution. Lastly, include ALL resources you
-looked at, not just the ones you ended up using directly.
 
 ## Final Self-Evaluations
 
