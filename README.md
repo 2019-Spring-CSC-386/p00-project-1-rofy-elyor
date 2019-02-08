@@ -1,4 +1,4 @@
-# Auto-Detection Security (Lock)
+# Autolock: LockPro v1
 
 **Author(s)**: *Raymond Okyere-Forson & Elyor Tukhtasinov*
 
