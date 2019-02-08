@@ -28,7 +28,7 @@ ________________________________________________________________________________
 
 - Initializing constant and global variables
 - Assigning pins to the appropriate components
-- Turning on or off MagLock based on door sensor
+- Turning on or off MagLock with a button
 
 *Please see attached file: LockPro_Start_Code.ino to view full pseudocode.*
 
@@ -75,16 +75,11 @@ Along the way, we had troubles with proper wiring as well as scope and experienc
 
 ## Reflection
 
-Wiring issues, problems solved as they come
-Learned about relays, programming for microcomtroller
-inputs/outputs, application of stuff we learned in electricity and electronics
-learned how to use github outside of IDE
+This project has been a daunting but great learning experience. Taking a course on electricity and electronics at the same time, we were glad that we already touched a breadboard and a multimeter before building our first embedded system solution. However, apart from dealing with wiring issues and taking measurements, we learned how code and electronic components interact by means of electric signals, and how to use these pieces of technology to build smart electronic devices. We found that taking both classes at the same time is helpful and immersive.
 
-Scope limitations
-Identifying what is relevant and irrelevant
-Importance of being on the same page
+It was daunting to jump into first project with beginner knowledge and skills, but we got to appreciate the approach that this course is designed around. We learned by researching and solving problems as they appeared. First, we had a difference in voltage requirements between the maglock and the microcontroller, which we learned how to solve, i.e. by adding a relay and an additional power supply to our design. In addition, Elyor never used GitHub outside of C++ IDE, so he learned how to use GitHub and the benefits it offers for team projects.
 
-Instructor should have found it more effective to have us learn by doing rather than giving us a crash course on major devices we can use and then assigning projects
+Lastly, we got a valuable experience of handling scope limitations of a project. Identifying what is relevant and irrelevant is more challenging than it may seem. For example, we struggled to include the door sensor into our autolock structure but then realized that although the autolock and door sensor are closely related, they solve separate atomic problems. Autolock just locks the door after it has been unlocked for 30 seconds, while the door sensor solves the problem of whether the door is shut or not before locking it. Therefore, we decided to forego the door sensor feature and focus on the core problem that we identified.
 
 ## References
 
