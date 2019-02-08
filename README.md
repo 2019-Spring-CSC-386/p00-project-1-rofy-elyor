@@ -8,7 +8,7 @@
 ## Purpose
 *Did you forget to lock? LockPro v1 has your back!*
 
-Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time (more than 5 minutes). The problem is that somebody else can access the dorm room and potentially steal Elyor's and his roommate's belongings. LockPro v1 will auto-lock the door after it has been left unlocked for 30 seconds. The lock also has an override button to unlock the door.
+Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm room doors in the Deep Green Residence Hall do not autolock themselves after left unlocked for an unreasonable amount of time, i.e. more than 30 seconds. The problem is that somebody else can access the dorm room and potentially steal Elyor's and/or his roommate's belongings. LockPro v1 will auto-lock the door after it has been left unlocked for 30 seconds.
 
 ## Initial Design Plan
 *To build LockPro v1, we will be using different hardware components along with the master code that will run the entire operation.*
@@ -18,18 +18,17 @@ Elyor's roommate frequently forgets to lock the door. Unfortunately, the dorm ro
 - Relay
 - Magnetic Lock (MagLock)
 - Button
-- Door Sensor
+- Buzzer (5V)
 - Power Supply (12V)
 - Power Probes
 - Connecting wires (Jumper Wires)
 - Jumper Cables
-- Resistor 10 kΩ
 - USB to micro USB cable
 ________________________________________________________________________________________________________________________________________
 
-- Initializing constant and global variables, if any.
-- Assigning pins to the appropriate components.
-- Turning on or off MagLock based on door sensor.
+- Initializing constant and global variables
+- Assigning pins to the appropriate components
+- Turning on or off MagLock with a button
 
 *Please see attached file: LockPro_Start_Code.ino to view full pseudocode.*
 
@@ -56,52 +55,41 @@ ________________________________________________________________________________
 - maglock_pro_updated: Makes button unlock maglock, else it's always locked
 
 ## Summary
-*You'll complete this part at the end of the project.*
 
-Provide a brief summary description of the design and implementation,
-including how much your initial design plan evolved, the final result
-you achieved and the amount of time you spent as a programmer in
-accomplishing these results, including any challenges overcome and
-innovations that were not specifically required by the assignment.
-This section should be no more than three paragraphs.
+This project took us around 25 hours, and we were able to create a working lock system with automatic lock and emergency unlock features. As we worked on this project, we had to narrow down its scope, namely forgo the idea of being able to unlock the door using voice, vibration or keypad password as well as the idea of having a door sensor check whether the door is shut. This happened due to challenges presented by the hardware that we needed for an operatable autolock function.
+
+At the prototype stage, after experimenting with a mock lock mimicked by an LED (off-open and on-locked), we received a magnetic lock and realized that the lock needs a 12V power supply, while the microcontroller is limitted to 5V. Therefore, we had to implement a relay to be able to control the maglock with the Arduino microcontroller. Due to scope limitatiomns, we replaced voice/sound/password lock/unlock feature, which we planned as an emergency feature to override the mechanism and unlock the door, with a simple button. We also experimented with a switch/door-sensor to design the feature that would autolock the door if the door sensor (or mimicked door sensor by a switch) shows that the door is shut but unlocked. However, we struggled with figuring out how to implement the door sensor, and agreed that the door sensor is out of the scope of the core problem that we are trying to solve, i.e. autolocking the lock after it was left open for 30 seconds. Therefore, we decided to let the door sensor go. At first we did not have an emergency unlock button, and our door-sensor/switch was inserted in between the microntroller and the relay, which controlled the current flow mechanically. We progressed with that and disconnected the emergency button from the relay and wired it exclusively to the to the microcontroller. We implemented the code to allow for control of the relay and respectively the lock via microcontroller based on the input from either emergency button or the program we wrote and loaded into the microcontroller. Last, we implemented a buzzer to enhance our autolock feature by making the autolock device notify the user by making sound when the lock is either locked or unlocked.
+
+Along the way, we had troubles with proper wiring as well as scope and experience limitations. Nevertheless, we were able to overcome these challenges and solve the core problem.
 
 ## Instructions
-Explain how to use your product. 
-This section should THOROUGHLY describe its usage (i.e., more than just "Push start").
+
+- First, the normal state of the lock is being locked or on.
+- To unlock the lock, press the button. The lock unlocks as you hear the beeping sound.
+- After the lock is unlocked, you have 30 seconds until it locks back again. You will hear the beeping sound when the lock autolocks.
 
 ## Errors and Constraints
-*You'll complete this part at the end of the project.*
 
-Every program has bugs. Use this section to create a bullet list of
-all known errors and deficiencies that remain in your product. 
-Also, list any constraints that must exist for your product to work 
-(e.g., Only works in low light situations).
+- There is no security mechanism implemented to unlock the door with a key or a password.
+- If the door is still open and more than 30 seconds passes, the lock will lock itself anyway. To lock the door properly, the user will have to unlock the lock, close the door and wait for 30 seconds until the lock autolocks.
 
 ## Reflection
-*You'll complete this part at the end of the project.*
 
-Write 2 - 4 paragraphs on your reactions to the final project. 
-Your reflection should be thoughtful and reflective. 
-It is NOT a report about WHAT you did. 
-Instead, it's a look back at what you learned by doing this project.
-It should be critical of shortcomings (yours, as well as the instructors/assignments) 
-as well as celebratory of what was achieved.
+This project has been a daunting but great learning experience. Taking a course on electricity and electronics at the same time, we were glad that we already touched a breadboard and a multimeter before building our first embedded system solution. However, apart from dealing with wiring issues and taking measurements, we learned how code and electronic components interact by means of electric signals, and how to use these pieces of technology to build smart electronic devices. We found that taking both classes at the same time is helpful and immersive.
+
+It was daunting to jump into first project with beginner knowledge and skills, but we got to appreciate the approach that this course is designed around. We learned by researching and solving problems as they appeared. First, we had a difference in voltage requirements between the maglock and the microcontroller, which we learned how to solve, i.e. by adding a relay and an additional power supply to our design. In addition, Elyor never used GitHub outside of C++ IDE, so he learned how to use GitHub and the benefits it offers for team projects.
+
+Lastly, we got a valuable experience of handling scope limitations of a project. Identifying what is relevant and irrelevant is more challenging than it may seem. For example, we struggled to include the door sensor into our autolock structure but then realized that although the autolock and door sensor are closely related, they solve separate atomic problems. Autolock just locks the door after it has been unlocked for 30 seconds, while the door sensor solves the problem of whether the door is shut or not before locking it. Therefore, we decided to forego the door sensor feature and focus on the core problem that we identified.
 
 ## References
 
 - Assistance was received from Cody Mitchell, Teaching Assistant, and Dr. Scott Heggen, course instructor
-- Sensor (Elyor: to determine whether Red or Green LED (lock imitation) is on; an analog pin should serve the purpose) Citation: https://startingelectronics.org/articles/arduino/measuring-voltage-with-arduino/
-- Piezoelectric Sensor (Learned about it in the Arduino: examples>sensors>knock, googled and found this: https://youtu.be/1SNC3ib10_4)
-- General research & useful sources: https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/ & https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
+- Explored sensor (to determine whether Red or Green LED (lock imitation)): https://startingelectronics.org/articles/arduino/measuring-voltage-with-arduino/
+- Explored piezoelectric sensor (learned about it in the Arduino: examples>sensors>knock): https://youtu.be/1SNC3ib10_4
+- Explored voice-control features enabled by Arduino: https://www.instructables.com/id/How-to-Make-Voice-Controlled-LEDs-Using-Arduino/
+- Explored voice-control features enabled by Arduino: https://play.google.com/store/apps/details?id=appinventor.ai_nitinpandit_00.Arduino_bluetooth_voice_controller&hl=en_IN
+- Explored how relay works with arduino: https://randomnerdtutorials.com/guide-for-relay-module-with-arduino/
 
-*Start this section at the beginning of the project, and update it throughout.*
-
-Throughout this project, you'll be used outside resources.
-Reference ALL ideas or code which are not your own, and describe and
-how you integrated the ideas or code into your program. This includes
-online sources, people who have helped you, and any other resources that
-are not solely your own contribution. Lastly, include ALL resources you
-looked at, not just the ones you ended up using directly.
 
 ## Final Self-Evaluations
 
