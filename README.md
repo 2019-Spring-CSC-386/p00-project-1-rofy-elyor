@@ -102,19 +102,19 @@ Lastly, we got a valuable experience of handling scope limitations of a project.
 
 ### Code creation: 
 
-*Partner 1 (replace this with your name): 5*
+*Partner 1 Elyor Tukhtasinov: 5*
 
-*Partner 2 (replace this with your name): 5*
+*Partner 2 Raymond Okyere-Forson: 5*
 
 ### Documentation creation:
 
-*Partner 1 (replace this with your name): 5*
+*Partner 1 Elyor Tukhtasinov: 5*
 
-*Partner 2 (replace this with your name): 5*
+*Partner 2 Raymond Okyere-Forson: 5*
 
 ### Teamwork & Participation:
 
-*Partner 1 (replace this with your name): 5*
+*Partner 1 Elyor Tukhtasinov: 5*
 
-*Partner 2 (replace this with your name): 5*
+*Partner 2 Raymond Okyere-Forson: 5*
 
