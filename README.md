@@ -35,11 +35,11 @@ ________________________________________________________________________________
 
 **Breadboard**:
 
-![This is the breadboard view of project](images/bb.png)
+![This is the breadboard view of project](images/bb_update.png)
 
 **Schematic**:
 
-![This is the schematic view of project](images/schem.png)
+![This is the schematic view of project](images/schem_update.png)
 
 ## Files
 *The list of all files currently being used in this project.*
@@ -64,9 +64,10 @@ Along the way, we had troubles with proper wiring as well as scope and experienc
 
 ## Instructions
 
-- First, the normal state of the lock is being locked or on.
-- To unlock the lock, press the button. The lock unlocks as you hear the beeping sound.
-- After the lock is unlocked, you have 30 seconds until it locks back again. You will hear the beeping sound when the lock autolocks.
+- First, ensure that the button, buzzer, relay and arduino have all the proper connections.
+- The normal state of the lock is being on or locked always. (This simulates poeple being indoor or outdoor and not interfering)
+- To unlock the lock, press the button. The lock unlocks as you hear the buzzer sound.
+- After the lock is unlocked, you have 30 seconds until it locks back again. You will hear the buzzer sound when the lock autolocks.
 
 ## Errors and Constraints
 
